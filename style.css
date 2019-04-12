@@ -1,0 +1,100 @@
+body {
+    margin-top: 0px;
+    background-color: #353a3f;
+    color: white;
+    background-image: url("IMG/others/wallper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Arial Rounded MT Bold";
+}
+.socialList
+{
+    border-color: transparent;
+    background-color: transparent;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+#logos{
+    height: 35px;
+    width: 35px;
+}
+.img-fluid.brands{
+    height: 30px;
+    width: 30px;
+}
+.list-group-item.socialList{
+    align-content: center;
+}
+#sendMail
+{
+    color: #e2e6ea;
+}
+#rights{
+    color: #e2e6ea;
+}
+#top {
+    margin-bottom: 0px;
+
+    color: #e2e6ea;
+}
+#body{
+    margin-top: 30px;
+}
+#face {
+    height: 30px;
+    align-items: center;
+    font-family: "Arial Rounded MT Bold";
+    text-align: center;
+}
+
+nav {
+    background-color: #1b1e23;
+    width: auto;
+}
+.nav-link {
+    margin-right: 5px;
+    font-style: italic;
+}
+#socNav{
+    background-color: transparent;
+text-align: left;
+    align-items: center;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+#map{
+    margin-left: 0;
+}
+#RSVP
+{
+    font-weight: bold;
+    font-size: medium;
+background-color: #1b1e21;
+}
+
+.invalid-feedback {
+    font-size: medium;
+}
+.valid-feedback{
+    font-size: medium;
+}
+.rounded-circle{
+    margin-right: 5px;
+    height: 35px;
+}
+#socialMedia{
+    border-color: #1b1e21;
+}
