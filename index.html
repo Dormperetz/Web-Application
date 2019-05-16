@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+
+<body onbeforeunload="msg();﻿">
+<!-- qoute -->
 <header name="quote">
     <div class="jumbotron-fluid text-center" id="top">
         <blockquote class="blockquote">
@@ -20,55 +22,61 @@
         </blockquote>
     </div>
 </header>
+<!-- navigator -->
 <nav class="navbar navbar-expand-sm navbar-dark sticky-top " name="sticky navigator">
-    <a class="navbar-brand text-center" href="#"><img id="face" src=IMG/Brands/face.jpg alt="Show me what you got!"> Show Me What You Got!</a>
+    <a class="navbar-brand text-center" href="#"><img id="face" src=IMG/Brands/face.jpg alt="Show me what you got!">
+        Show Me What You Got!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#details">Details</a>
+                <a class="nav-link" href="#details" onclick="navigateout=false;">Details</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#ageJumper">Event Agenda</a>
+                <a class="nav-link" href="#ageJumper" onclick="navigateout=false;">Event Agenda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#mapJumper">Location</a>
+                <a class="nav-link" href="#mapJumper" onclick="navigateout=false;">Location</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#arrival">Arrival Table</a>
+                <a class="nav-link" href="#arrival" onclick="navigateout=false;">Arrival Table</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#socialMedia">Social Media</a>
+                <a class="nav-link" href="#socialMedia" onclick="navigateout=false;">Social Media</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#RSVPreg">Registration</a>
+                <a class="nav-link" href="#RSVPreg" onclick="navigateout=false;">Registration</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us!</a>
+                <a class="nav-link" href="#contact" onclick="navigateout=false;">Contact Us!</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#carouselCont">MEMES!!!!</a>
+                <a class="nav-link" href="#carouselCont" onclick="navigateout=false;">MEMES!!!!</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#top">Top</a>
+                <a class="nav-link" href="#top" onclick="navigateout=false;">Top</a>
             </li>
 
         </ul>
     </div>
 </nav>
+<!-- actually body -->
 <div class="container" name="body">
     <div class="row">
+        <!-- left side of the body -->
         <div class="col-sm-6" name="left side" id="leftCol">
+            <!-- event details, agenda -->
             <div class="container" id="details" name="about">
                 <br>
-                <h2 id="name">MemeCon!</h2>
-                <h6>Disappointment Island, New Zealand <br> July 19,2019</h6>
-                <p>MemeCon is the biggest gathering of geeks in the world! even more than a Hi-Tech meet&greet
+                <p id="name">MemeCon!</p>
+                <p class="enlarge">Disappointment Island, New Zealand <br> July 19,2019</p>
+                <p class="enlarge" o>MemeCon is the biggest gathering of geeks in the world! even more than a Hi-Tech
+                    meet&greet
                     events!</p>
                 <h3 id="ageJumper">Event Agenda:</h3>
-                <h6>What can you expect? Well, obviously:</h6>
+                <p class="enlarge">What can you expect? Well, obviously:</p>
                 <ul class="list-group" id="agenda">
                     <li class="list-group-item-secondary">Memes making and sharing</li>
                     <li class="list-group-item-primary">Overly-Attached-Girlfriend and Bad-Luck-Brian marriage
@@ -86,6 +94,7 @@
                 <br>
             </div>
             <br>
+            <!-- map -->
             <div class="container" id="mapJumper" name="map">
                 <h3>Event Location</h3>
                 <p2 id="p2">As you know, this year the MemeCon will take place at Disappointment Island, NZ.
@@ -98,11 +107,12 @@
                 </div>
             </div>
             <br>
+            <!-- arrival table -->
             <div class="container" id="arrival" name="arrival table">
                 <br>
                 <h4 class="text-center">We also arranged shuttles for you!</h4>
                 <div class="container" id="shuTab">
-                    <table class="table table-bordered table-dark table-bordered table-striped">
+                    <table id="artab" class="table table-bordered table-dark table-bordered  ">
                         <thead class="thead-light text-center">
                         <tr>
                             <th>Shuttle</th>
@@ -135,79 +145,75 @@
                 </div>
             </div>
             <br>
+            <!-- carousel -->
             <div class="container" id="carouselCont" name="carousel">
                 <h3>MEMES!</h3>
                 <h4>Here some memes you can use to excuse what you did instead of going to class:</h4>
                 <div id="carousel" class="carousel slide " data-ride="carousel">
-
-                    <ul class="carousel-indicators ">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                        <li data-target="#carousel" data-slide-to="3"></li>
-                        <li data-target="#carousel" data-slide-to="4"></li>
-                        <li data-target="#carousel" data-slide-to="5"></li>
-                        <li data-target="#carousel" data-slide-to="6"></li>
-                        <li data-target="#carousel" data-slide-to="7"></li>
-                        <li data-target="#carousel" data-slide-to="8"></li>
-                        <li data-target="#carousel" data-slide-to="9"></li>
-                        <li data-target="#carousel" data-slide-to="10"></li>
-                    </ul>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="IMG/Memes/bat.jpg" class="img-fluid rounded-sm" alt="im dark">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/choice.png" class="img-fluid rounded-sm" alt="cant">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/oops.png" class="img-fluid rounded-sm" alt="oops">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/pika.png" class="img-fluid rounded-sm" alt="pika">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/brain.png" class="img-fluid rounded-sm" alt="brain">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/car.png" class="img-fluid rounded-sm" alt="vroom vroom">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/win.png" class="img-fluid rounded-sm" alt="addict">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/stark.png" class="img-fluid rounded-sm" alt="no head">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/butter.png" class="img-fluid rounded-sm" alt="butterfly">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="IMG/Memes/kermit.png" class="img-fluid rounded-sm" alt="kermit">
-                        </div>
-
+                    <div class="mySlides">
+                        <img src="IMG/Memes/bat.jpg" class="img-fluid rounded-sm" alt="im dark">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/choice.png" class="img-fluid rounded-sm" alt="cant">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/oops.png" class="img-fluid rounded-sm" alt="oops">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/pika.png" class="img-fluid rounded-sm" alt="pika">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/brain.png" class="img-fluid rounded-sm" alt="brain">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/car.png" class="img-fluid rounded-sm" alt="vroom vroom">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/win.png" class="img-fluid rounded-sm" alt="addict">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/stark.png" class="img-fluid rounded-sm" alt="no head">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/butter.png" class="img-fluid rounded-sm" alt="butterfly">
+                    </div>
+                    <div class="mySlides">
+                        <img src="IMG/Memes/kermit.png" class="img-fluid rounded-sm" alt="kermit">
                     </div>
 
-                    <a class="carousel-control-prev" href="#carousel" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+                    <a id="prev" class="prev" onclick="moveSlides(-1)">&#10096;</a>
+                    <a id="next" class="next" onclick="moveSlides(1)">&#10097;</a>
 
                 </div>
+                <br>
+
+                <div id="indicator">
+                    <span class="dot" onclick="thisSlide(1)"></span>
+                    <span class="dot" onclick="thisSlide(2)"></span>
+                    <span class="dot" onclick="thisSlide(3)"></span>
+                    <span class="dot" onclick="thisSlide(4)"></span>
+                    <span class="dot" onclick="thisSlide(5)"></span>
+                    <span class="dot" onclick="thisSlide(6)"></span>
+                    <span class="dot" onclick="thisSlide(7)"></span>
+                    <span class="dot" onclick="thisSlide(8)"></span>
+                    <span class="dot" onclick="thisSlide(9)"></span>
+                    <span class="dot" onclick="thisSlide(10)"></span>
+                </div>
+
             </div>
             <br>
+            <!-- form -->
             <div class="container" id="RSVPreg" name="RSVP">
                 <div class="container" id="RSVP">
                     <a name="reg"><h2>Registration</h2></a>
-                    <p>Please fill your details and then proceed to submit</p>
-                    <form action="/action_page.php" class="was-validated">
+                    <b><p>Please fill your details and then proceed to submit</p></b>
+                    <p>Make sure you fill the right data in the right place!</p>
+                    <form name="formi" action="/submit.php" onsubmit="return form()" method="post"
+                          class="was-validated">
                         <div class="form-group" name="full name">
                             <label for="fullname">Full name:</label>
-                            <input type="text" class="form-control" id="fullname" placeholder="Enter your full name"
-                                   name="fullname"
-                                   required>
+                            <input type="text" class="form-control" id="fullname" name="Name"
+                                   placeholder="Only letters and spaces." required>
                             <div class="valid-feedback">Great success! <img class="rounded-circle"
                                                                             src="IMG/Form/borat.jpg"
                                                                             alt="borat">
@@ -220,9 +226,9 @@
                         </div>
                         <div class="form-group" name="phone number">
                             <label for="Phone">Phone number:</label>
-                            <input type="number" class="form-control" id="Phone" placeholder="Enter your phone number"
-                                   name="Phone"
-                                   required>
+                            <input type="tel" class="form-control" placeholder="Only numbers; Must be 9 or 10 digits."
+                                   id="Phone" name="Phone" required>
+
                             <div class="valid-feedback">Great success! <img class="rounded-circle"
                                                                             src="IMG/Form/borat.jpg"
                                                                             alt="borat">
@@ -235,9 +241,8 @@
                         </div>
                         <div class="form-group" name="email">
                             <label for="mail">E-mail:</label>
-                            <input type="email" class="form-control" id="mail" placeholder="Enter your E-mail adress"
-                                   name="mail"
-                                   required>
+                            <input type="email" class="form-control" id="mail" placeholder="Enter your E-mail address"
+                                   name="mail" required>
                             <div class="valid-feedback">Great success! <img class="rounded-circle"
                                                                             src="IMG/Form/borat.jpg"
                                                                             alt="borat">
@@ -251,7 +256,7 @@
                         <div class="form-group" name="guests">
                             <label for="numOfGuests">Number of guests:</label>
                             <input type="number" class="form-control" id="numOfGuests"
-                                   placeholder="How many guests do you have?"
+                                   placeholder="Must be 0 or above"
                                    name="numOfGuests" required>
                             <div class="valid-feedback">Great success! <img class="rounded-circle"
                                                                             src="IMG/Form/borat.jpg"
@@ -279,19 +284,23 @@
                         <br>
                         <div class="form-group text-center" name="additional info">
                             <label for="addComment">Any last words?</label> <br>
-                            <textarea id="addComment" name="addComment" rows="5" cols="30"></textarea>
+                            <textarea id="addComment" maxlength="200" name="addComment" rows="5" cols="30"></textarea>
+                            <br>
+                            <span id="chars">200</span> characters remaining
                         </div>
                         <div class="container text-center" name="submit">
                             <button type="submit" class="btn btn-primary">Submit</button>
+                            <input type="reset" class="btn btn-primary" value="Reset" name="Reset">
                         </div>
-
                     </form>
                 </div>
             </div>
             <hr class="d-sm-none">
         </div>
+        <!-- right side of the body -->
         <div class="col-sm-6" name="right side">
             <br>
+            <!-- social media navigator -->
             <div class="container small" id="socialMedia" name="social media">
                 <h3 class="text-center">Social media</h3>
                 <nav class="navbar navbar-expand-sm navbar-dark border-dark overflow-auto  " id="socNav">
@@ -319,15 +328,23 @@
         </div>
     </div>
 </div>
+<!-- footer -->
 <div class="container-fluid text-center" name="footer">
     <br>
     <footer>
         <div class="container-fluid">
             <div class="row">
+                <!--modal -->
                 <div class="col-sm">
-                    <a id="sendMail"
-                       href="mailto:dorrrrrrr@gmail.com?subject=MemeCon! &body=Meowth! I%20can%20has%20a%20few%20answers?">Contact
-                        us! </a>
+                    <button id="myBtn" class="btn1">Contact Us!</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <button id="sendMail" class="btn2" onclick="sendMail()">Send Mail</button>
+                        </div>
+
+                    </div>
+                    <!-- copyrights -->
                     <br>
                     <a id="rights" href="https://github.com/Dormperetz"> &copy All Rights Reserved To Dor Peretz</a>
 
@@ -337,5 +354,7 @@
         <a name="contact"></a>
     </footer>
 </div>
+<!-- importing js file -->
+<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
