@@ -8,40 +8,52 @@ body {
     background-size: cover;
     font-family: "Arial Rounded MT Bold";
 }
-.socialList
-{
+
+#name {
+    font-size: 30px;
+}
+
+.socialList {
     border-color: transparent;
     background-color: transparent;
     align-content: center;
     align-items: center;
     text-align: center;
 }
-#logos{
+
+#logos {
     height: 35px;
     width: 35px;
 }
-.img-fluid.brands{
+
+.img-fluid.brands {
     height: 30px;
     width: 30px;
-}
-.list-group-item.socialList{
     align-content: center;
 }
-#sendMail
-{
+
+.list-group-item.socialList {
+    align-content: center;
+}
+
+#sendMail {
     color: #e2e6ea;
 }
-#rights{
+
+#rights {
     color: #e2e6ea;
 }
+
 #top {
     margin-bottom: 0px;
 
     color: #e2e6ea;
 }
-#body{
+
+#body {
     margin-top: 30px;
 }
+
 #face {
     height: 30px;
     align-items: center;
@@ -53,48 +65,179 @@ nav {
     background-color: #1b1e23;
     width: auto;
 }
+
 .nav-link {
     margin-right: 5px;
     font-style: italic;
 }
-#socNav{
+
+#socNav {
     background-color: transparent;
-text-align: left;
+    text-align: left;
     align-items: center;
 }
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
-#map{
+
+#map {
     margin-left: 0;
 }
-#RSVP
-{
+
+#RSVP {
     font-weight: bold;
     font-size: medium;
-background-color: #1b1e21;
+    background-color: #1b1e21;
 }
 
 .invalid-feedback {
     font-size: medium;
 }
-.valid-feedback{
+
+.valid-feedback {
     font-size: medium;
 }
-.rounded-circle{
+
+.rounded-circle {
     margin-right: 5px;
     height: 35px;
 }
-#socialMedia{
+
+#socialMedia {
     border-color: #1b1e21;
+}
+
+#indicator {
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+#prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: -43px;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 5px 0 0 5px;
+    user-select: none;
+
+}
+
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -43px;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+.modal {
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    border: 0px;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: transparent;
+    background-color: transparent;
+}
+.modal-content {
+    background-image: url("IMG/others/awall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    height: 500px;
+    width: 1920px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+
+}
+.btn2 {
+    margin-top: 220px;
+    color: white;
+    font-size: xx-large;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btn1{
+    padding: 0px 0px;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
