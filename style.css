@@ -197,12 +197,13 @@ nav {
     left: 0;
     top: 0;
     border: 0px;
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    overflow: auto; 
+    overflow: auto;
     background-color: transparent;
     background-color: transparent;
 }
+
 .modal-content {
     background-image: url("IMG/others/awall.png");
     background-repeat: no-repeat;
@@ -216,6 +217,7 @@ nav {
     width: 80%;
 
 }
+
 .btn2 {
     margin-top: 220px;
     color: white;
@@ -223,18 +225,21 @@ nav {
     background-color: transparent;
     border-color: transparent;
 }
-.btn1{
+
+.btn1 {
     padding: 0px 0px;
     color: white;
     background-color: transparent;
     border-color: transparent;
 }
+
 .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
     color: #000;
