@@ -3,15 +3,15 @@
 <head>
     <title>MemeCon!</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
-<body onbeforeunload="msg();﻿">
+<body>
 <!-- qoute -->
 <header name="quote">
     <div class="jumbotron-fluid text-center" id="top">
@@ -24,9 +24,9 @@
 </header>
 <!-- navigator -->
 <nav class="navbar navbar-expand-sm navbar-dark sticky-top " name="sticky navigator">
-    <a class="navbar-brand text-center" href="#"><img id="face" src=IMG/Brands/face.jpg alt="Show me what you got!">
+    <a class="navbar-brand text-center" href="#"><img alt="Show me what you got!" id="face" src=IMG/Brands/face.jpg>
         Show Me What You Got!</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -66,7 +66,7 @@
 <div class="container" name="body">
     <div class="row">
         <!-- left side of the body -->
-        <div class="col-sm-6" name="left side" id="leftCol">
+        <div class="col-sm-6" id="leftCol" name="left side">
             <!-- event details, agenda -->
             <div class="container" id="details" name="about">
                 <br>
@@ -101,9 +101,9 @@
                     <br>Here is the location on Google Maps!:
                 </p2>
                 <div class="map-responsive">
-                    <iframe id="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20257.079512319775!2d165.95526427313268!3d-50.606030087800946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9b37960d3cdddd7%3A0xbd1bca4ab10f2187!2sDisappointment+Island!5e0!3m2!1sen!2sil!4v1554986395085!5m2!1sen!2sil"
-                            width="600" height="450" frameborder="0" allowfullscreen></iframe>
+                    <iframe allowfullscreen
+                            frameborder="0"
+                            height="450" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20257.079512319775!2d165.95526427313268!3d-50.606030087800946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9b37960d3cdddd7%3A0xbd1bca4ab10f2187!2sDisappointment+Island!5e0!3m2!1sen!2sil!4v1554986395085!5m2!1sen!2sil" width="600"></iframe>
                 </div>
             </div>
             <br>
@@ -112,7 +112,7 @@
                 <br>
                 <h4 class="text-center">We also arranged shuttles for you!</h4>
                 <div class="container" id="shuTab">
-                    <table id="artab" class="table table-bordered table-dark table-bordered  ">
+                    <table class="table table-bordered table-dark table-bordered  " id="artab">
                         <thead class="thead-light text-center">
                         <tr>
                             <th>Shuttle</th>
@@ -149,40 +149,40 @@
             <div class="container" id="carouselCont" name="carousel">
                 <h3>MEMES!</h3>
                 <h4>Here some memes you can use to excuse what you did instead of going to class:</h4>
-                <div id="carousel" class="carousel slide " data-ride="carousel">
+                <div class="carousel slide " data-ride="carousel" id="carousel">
                     <div class="mySlides">
-                        <img src="IMG/Memes/bat.jpg" class="img-fluid rounded-sm" alt="im dark">
+                        <img alt="im dark" class="img-fluid rounded-sm" src="IMG/Memes/bat.jpg">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/choice.png" class="img-fluid rounded-sm" alt="cant">
+                        <img alt="cant" class="img-fluid rounded-sm" src="IMG/Memes/choice.png">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/oops.png" class="img-fluid rounded-sm" alt="oops">
+                        <img alt="oops" class="img-fluid rounded-sm" src="IMG/Memes/oops.png">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/pika.png" class="img-fluid rounded-sm" alt="pika">
+                        <img alt="pika" class="img-fluid rounded-sm" src="IMG/Memes/pika.png">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/brain.png" class="img-fluid rounded-sm" alt="brain">
+                        <img alt="brain" class="img-fluid rounded-sm" src="IMG/Memes/brain.png">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/car.png" class="img-fluid rounded-sm" alt="vroom vroom">
+                        <img alt="vroom vroom" class="img-fluid rounded-sm" src="IMG/Memes/car.png">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/win.png" class="img-fluid rounded-sm" alt="addict">
+                        <img alt="addict" class="img-fluid rounded-sm" src="IMG/Memes/win.png">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/stark.png" class="img-fluid rounded-sm" alt="no head">
+                        <img alt="no head" class="img-fluid rounded-sm" src="IMG/Memes/stark.png">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/butter.png" class="img-fluid rounded-sm" alt="butterfly">
+                        <img alt="butterfly" class="img-fluid rounded-sm" src="IMG/Memes/butter.png">
                     </div>
                     <div class="mySlides">
-                        <img src="IMG/Memes/kermit.png" class="img-fluid rounded-sm" alt="kermit">
+                        <img alt="kermit" class="img-fluid rounded-sm" src="IMG/Memes/kermit.png">
                     </div>
 
-                    <a id="prev" class="prev" onclick="moveSlides(-1)">&#10096;</a>
-                    <a id="next" class="next" onclick="moveSlides(1)">&#10097;</a>
+                    <a class="prev" id="prev" onclick="moveSlides(-1)">&#10096;</a>
+                    <a class="next" id="next" onclick="moveSlides(1)">&#10097;</a>
 
                 </div>
                 <br>
@@ -208,89 +208,89 @@
                     <a name="reg"><h2>Registration</h2></a>
                     <b><p>Please fill your details and then proceed to submit</p></b>
                     <p>Make sure you fill the right data in the right place!</p>
-                    <form name="formi" action="/submit.php" onsubmit="return form()" method="post"
-                          class="was-validated">
+                    <form action="/submit.php" class="was-validated" method="post" name="formi"
+                          onsubmit="return form()">
                         <div class="form-group" name="full name">
                             <label for="fullname">Full name:</label>
-                            <input type="text" class="form-control" id="fullname" name="Name"
-                                   placeholder="Only letters and spaces." required>
-                            <div class="valid-feedback">Great success! <img class="rounded-circle"
-                                                                            src="IMG/Form/borat.jpg"
-                                                                            alt="borat">
+                            <input class="form-control" id="fullname" name="Name" placeholder="Only letters and spaces."
+                                   required type="text">
+                            <div class="valid-feedback">Great success! <img alt="borat"
+                                                                            class="rounded-circle"
+                                                                            src="IMG/Form/borat.jpg">
                             </div>
                             <div class="invalid-feedback">If you fill this field it would be great! <img
+                                    alt="it would be great"
                                     class="rounded-circle"
-                                    src="IMG/Form/great.jpg"
-                                    alt="it would be great">
+                                    src="IMG/Form/great.jpg">
                             </div>
                         </div>
                         <div class="form-group" name="phone number">
                             <label for="Phone">Phone number:</label>
-                            <input type="tel" class="form-control" placeholder="Only numbers; Must be 9 or 10 digits."
-                                   id="Phone" name="Phone" required>
+                            <input class="form-control" id="Phone" name="Phone"
+                                   placeholder="Only numbers; Must be 9 or 10 digits." required type="tel">
 
-                            <div class="valid-feedback">Great success! <img class="rounded-circle"
-                                                                            src="IMG/Form/borat.jpg"
-                                                                            alt="borat">
+                            <div class="valid-feedback">Great success! <img alt="borat"
+                                                                            class="rounded-circle"
+                                                                            src="IMG/Form/borat.jpg">
                             </div>
                             <div class="invalid-feedback">If you fill this field it would be great! <img
+                                    alt="it would be great"
                                     class="rounded-circle"
-                                    src="IMG/Form/great.jpg"
-                                    alt="it would be great">
+                                    src="IMG/Form/great.jpg">
                             </div>
                         </div>
                         <div class="form-group" name="email">
                             <label for="mail">E-mail:</label>
-                            <input type="email" class="form-control" id="mail" placeholder="Enter your E-mail address"
-                                   name="mail" required>
-                            <div class="valid-feedback">Great success! <img class="rounded-circle"
-                                                                            src="IMG/Form/borat.jpg"
-                                                                            alt="borat">
+                            <input class="form-control" id="mail" name="mail" placeholder="Enter your E-mail address"
+                                   required type="email">
+                            <div class="valid-feedback">Great success! <img alt="borat"
+                                                                            class="rounded-circle"
+                                                                            src="IMG/Form/borat.jpg">
                             </div>
                             <div class="invalid-feedback">If you fill this field it would be great! <img
+                                    alt="it would be great"
                                     class="rounded-circle"
-                                    src="IMG/Form/great.jpg"
-                                    alt="it would be great">
+                                    src="IMG/Form/great.jpg">
                             </div>
                         </div>
                         <div class="form-group" name="guests">
                             <label for="numOfGuests">Number of guests:</label>
-                            <input type="number" class="form-control" id="numOfGuests"
+                            <input class="form-control" id="numOfGuests" name="numOfGuests"
                                    placeholder="Must be 0 or above"
-                                   name="numOfGuests" required>
-                            <div class="valid-feedback">Great success! <img class="rounded-circle"
-                                                                            src="IMG/Form/borat.jpg"
-                                                                            alt="borat">
+                                   required type="number">
+                            <div class="valid-feedback">Great success! <img alt="borat"
+                                                                            class="rounded-circle"
+                                                                            src="IMG/Form/borat.jpg">
                             </div>
                             <div class="invalid-feedback">If you fill this field it would be great! <img
+                                    alt="it would be great"
                                     class="rounded-circle"
-                                    src="IMG/Form/great.jpg"
-                                    alt="it would be great">
+                                    src="IMG/Form/great.jpg">
                             </div>
                         </div>
                         <div class="container text-center" name="arrival method">How will you come?
                             <br>
                             <div class="form-check-inline">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio" required>Shuttle
+                                    <input class="form-check-input" name="optradio" required type="radio">Shuttle
                                 </label>
                             </div>
                             <div class="form-check-inline">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">Independently
+                                    <input class="form-check-input" name="optradio" type="radio">Independently
                                 </label>
                             </div>
                         </div>
                         <br>
                         <div class="form-group text-center" name="additional info">
                             <label for="addComment">Any last words?</label> <br>
-                            <textarea id="addComment" maxlength="200" name="addComment" rows="5" cols="30"></textarea>
+                            <textarea cols="30" id="addComment" maxlength="200" name="addComment" rows="5"></textarea>
                             <br>
                             <span id="chars">200</span> characters remaining
                         </div>
                         <div class="container text-center" name="submit">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <input type="reset" class="btn btn-primary" value="Reset" name="Reset">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <input class="btn btn-primary" name="Reset" type="reset" value="Reset">
                         </div>
                     </form>
                 </div>
@@ -305,10 +305,10 @@
                 <h3 class="text-center">Social media</h3>
                 <nav class="navbar navbar-expand-sm navbar-dark border-dark overflow-auto  " id="socNav">
 
-                    <a class="navbar-brand face" href="#"><img class="rounded-circle" id="logos"
-                                                               src=IMG/Brands/logos.png
-                                                               alt="Social media"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#so">
+                    <a class="navbar-brand face" href="#"><img alt="Social media" class="rounded-circle"
+                                                               id="logos"
+                                                               src=IMG/Brands/logos.png></a>
+                    <button class="navbar-toggler" data-target="#so" data-toggle="collapse" type="button">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="so">
@@ -325,6 +325,7 @@
                     </div>
                 </nav>
             </div>
+
         </div>
     </div>
 </div>
@@ -336,17 +337,17 @@
             <div class="row">
                 <!--modal -->
                 <div class="col-sm">
-                    <button id="myBtn" class="btn1">Contact Us!</button>
-                    <div id="myModal" class="modal">
+                    <button class="btn1" id="myBtn">Contact Us!</button>
+                    <div class="modal" id="myModal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
-                            <button id="sendMail" class="btn2" onclick="sendMail()">Send Mail</button>
+                            <button class="btn2" id="sendMail" onclick="sendMail()">Send Mail</button>
                         </div>
 
                     </div>
                     <!-- copyrights -->
                     <br>
-                    <a id="rights" href="https://github.com/Dormperetz"> &copy All Rights Reserved To Dor Peretz</a>
+                    <a href="https://github.com/Dormperetz" id="rights"> &copy All Rights Reserved To Dor Peretz</a>
 
                 </div>
             </div>
@@ -355,6 +356,6 @@
     </footer>
 </div>
 <!-- importing js file -->
-<script type="text/javascript" src="scripts.js"></script>
+<script src="scripts.js" type="text/javascript"></script>
 </body>
 </html>
