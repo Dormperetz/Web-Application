@@ -63,6 +63,7 @@ window.onload = function f() {
 }
 
 /*form*/
+/*
 function form() {
     var letters = /^[A-Za-z- ]+$/;
     var nums = /^[0-9]+$/;
@@ -107,12 +108,14 @@ function form() {
 }
 
 /*char counter*/
+
 var maxChar = 200;
-$('textarea').keyup(function () {
+$('textarea').keyup(function(){
     var length = $(this).val().length;
-    var length = maxChar - length;
+     length = maxChar - length;
     $('#chars').text(length);
 });
+
 /*modal*/
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -139,7 +142,9 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
-
+function f() {
+    onr
+}
 //send mail
 function sendMail() {
     var link = "mailto:dorrrrrrr@gmail.com"
@@ -161,3 +166,45 @@ $(document).on("mouseleave", function () {
     alert("You're out, come back in, I will tell you this ONLY ONCE!");
 });
 */
+/*
+ <?php
+                function test_input($data)
+                {
+                    $data = trim($data);
+                    $data = stripslashes($data);
+                    $data = htmlspecialchars($data);
+                    return $data;
+                }
+
+                $guests = $name = $email = $phone = "";
+                $flagName = $flagPhone = $flagMail = $flagGuests  = true;
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $name = test_input($_POST["Name"]);
+                    $phone = test_input($_POST["Phone"]);
+                    $email = test_input($_POST["mail"]);
+                    $guests = test_input($_POST["numOfGuests"]);
+
+                    if (!preg_match("/^[a-zA-Z ]*$/", $name) || $name == "") {
+                        echo "<div class='alert alert-danger' role='alert'>The name can only include letters and spaces</div>";
+                        $flagName = false;
+                    }
+                    if (!preg_match("/^[0-9]{9,10}$/", $phone)|| $phone == "") {
+                        echo "<div class='alert alert-danger' role='alert'>The Phone number can only include 9 or 10 NUMBERS </div>";
+                        $flagPhone = false;
+                    }
+                    if (!filter_var($email, FILTER_VALIDATE_EMAIL) || $email == "") {
+                        echo "<div class='alert alert-danger' role='alert'>Invalid E-mail address</div>";
+                        $flagMail = false;
+                    }
+                    if ($guests < 0 ) {
+                        echo "<div class='alert alert-danger' role='alert'>Number of guests should be 0 or greater </div>";
+                        $flagGuests = false;
+                    }
+
+                    if ($flagName == true && $flagPhone == true && $flagMail == true && $flagGuests == true ) {
+                        echo "<div class='alert alert-success' role='alert'>Thnak you for registering, " . $name . "<br> Number of guests: " . $guests . "<br>Good luck!</div>";
+                    }
+
+                }
+                ?>
+ */

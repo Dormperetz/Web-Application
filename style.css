@@ -8,6 +8,20 @@ body {
     background-size: cover;
     font-family: "Arial Rounded MT Bold";
 }
+nav {
+    background-color: #1b1e23;
+    width: auto;
+}
+
+.nav-link {
+    margin-right: 5px;
+    font-style: italic;
+}
+.error{
+    color: red;
+    font-family: "Arial Rounded MT";
+}
+
 
 #name {
     font-size: 30px;
@@ -61,15 +75,7 @@ body {
     text-align: center;
 }
 
-nav {
-    background-color: #1b1e23;
-    width: auto;
-}
 
-.nav-link {
-    margin-right: 5px;
-    font-style: italic;
-}
 
 #socNav {
     background-color: transparent;
